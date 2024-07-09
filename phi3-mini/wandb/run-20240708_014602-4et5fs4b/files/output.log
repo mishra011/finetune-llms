@@ -1,0 +1,66 @@
+  0%|          | 0/3187 [00:00<?, ?it/s]/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/transformers/trainer.py:3276: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  ctx_manager = torch.cpu.amp.autocast(cache_enabled=cache_enabled, dtype=self.amp_dtype)
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+[codecarbon INFO @ 01:46:19] Energy consumed for RAM : 0.000025 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:46:19] Energy consumed for all CPUs : 0.000177 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:46:19] 0.000202 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:46:34] Energy consumed for RAM : 0.000050 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:46:34] Energy consumed for all CPUs : 0.000354 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:46:34] 0.000404 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:46:49] Energy consumed for RAM : 0.000075 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:46:49] Energy consumed for all CPUs : 0.000531 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:46:49] 0.000606 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:47:04] Energy consumed for RAM : 0.000100 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:47:04] Energy consumed for all CPUs : 0.000708 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:47:04] 0.000808 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:47:19] Energy consumed for RAM : 0.000125 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:47:19] Energy consumed for all CPUs : 0.000886 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:47:19] 0.001011 kWh of electricity used since the beginning.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/transformers/training_args.py:1509: FutureWarning: using `no_cuda` is deprecated and will be removed in version 5.0 of 🤗 Transformers. Use `use_cpu` instead
+  warnings.warn(
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': dataset_text_field, max_seq_length. Will not be supported from version '1.0.0'.
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/transformers/training_args.py:1961: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:269: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:307: UserWarning: You passed a `dataset_text_field` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:397: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+[codecarbon INFO @ 01:47:34] Energy consumed for RAM : 0.000150 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:47:34] Energy consumed for all CPUs : 0.001063 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:47:34] 0.001213 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:47:49] Energy consumed for RAM : 0.000175 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:47:49] Energy consumed for all CPUs : 0.001240 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:47:49] 0.001415 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:48:04] Energy consumed for RAM : 0.000200 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:48:04] Energy consumed for all CPUs : 0.001417 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:48:04] 0.001617 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:48:19] Energy consumed for RAM : 0.000225 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:48:19] Energy consumed for all CPUs : 0.001594 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:48:19] 0.001819 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:48:34] Energy consumed for RAM : 0.000250 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:48:34] Energy consumed for all CPUs : 0.001771 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:48:34] 0.002021 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:48:35] [setup] RAM Tracking...
+[codecarbon INFO @ 01:48:35] [setup] GPU Tracking...
+[codecarbon INFO @ 01:48:35] No GPU found.
+[codecarbon INFO @ 01:48:35] [setup] CPU Tracking...
+[codecarbon WARNING @ 01:48:36] No CPU tracking mode found. Falling back on CPU constant mode.
+[codecarbon WARNING @ 01:48:36] We saw that you have a Apple M3 but we don't know it. Please contact us.
+[codecarbon INFO @ 01:48:36] CPU Model on constant consumption mode: Apple M3
+[codecarbon INFO @ 01:48:36] >>> Tracker's metadata:
+[codecarbon INFO @ 01:48:36]   Platform system: macOS-14.5-arm64-arm-64bit
+[codecarbon INFO @ 01:48:36]   Python version: 3.10.14
+[codecarbon INFO @ 01:48:36]   CodeCarbon version: 2.3.5
+[codecarbon INFO @ 01:48:36]   Available RAM : 16.000 GB
+[codecarbon INFO @ 01:48:36]   CPU count: 8
+[codecarbon INFO @ 01:48:36]   CPU model: Apple M3
+[codecarbon INFO @ 01:48:36]   GPU count: None
+[codecarbon INFO @ 01:48:36]   GPU model: None
+TRAINER LOADED
+[codecarbon INFO @ 01:48:49] Energy consumed for RAM : 0.000275 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:48:49] Energy consumed for all CPUs : 0.001948 kWh. Total CPU Power : 42.5 W

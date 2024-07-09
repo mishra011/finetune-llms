@@ -1,0 +1,1420 @@
+2024-07-08 18:56:01,758 INFO    StreamThr :53042 [internal.py:wandb_internal():85] W&B internal server running at pid: 53042, started at: 2024-07-08 18:56:01.757426
+2024-07-08 18:56:01,758 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status
+2024-07-08 18:56:01,764 INFO    WriterThread:53042 [datastore.py:open_for_write():87] open: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/run-3xr0hxwp.wandb
+2024-07-08 18:56:01,764 DEBUG   SenderThread:53042 [sender.py:send():379] send: header
+2024-07-08 18:56:01,785 DEBUG   SenderThread:53042 [sender.py:send():379] send: run
+2024-07-08 18:56:02,595 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: check_version
+2024-07-08 18:56:02,595 INFO    SenderThread:53042 [dir_watcher.py:__init__():211] watching files in: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files
+2024-07-08 18:56:02,595 INFO    SenderThread:53042 [sender.py:_start_run_threads():1188] run started: 3xr0hxwp with start time 1720445161.757793
+2024-07-08 18:56:02,595 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: check_version
+2024-07-08 18:56:02,721 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: run_start
+2024-07-08 18:56:02,727 DEBUG   HandlerThread:53042 [system_info.py:__init__():26] System info init
+2024-07-08 18:56:02,727 DEBUG   HandlerThread:53042 [system_info.py:__init__():41] System info init done
+2024-07-08 18:56:02,727 INFO    HandlerThread:53042 [system_monitor.py:start():194] Starting system monitor
+2024-07-08 18:56:02,727 INFO    SystemMonitor:53042 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-08 18:56:02,727 INFO    HandlerThread:53042 [system_monitor.py:probe():214] Collecting system info
+2024-07-08 18:56:02,728 INFO    SystemMonitor:53042 [interfaces.py:start():188] Started cpu monitoring
+2024-07-08 18:56:02,731 INFO    SystemMonitor:53042 [interfaces.py:start():188] Started disk monitoring
+2024-07-08 18:56:02,732 INFO    SystemMonitor:53042 [interfaces.py:start():188] Started gpuapple monitoring
+2024-07-08 18:56:02,734 INFO    SystemMonitor:53042 [interfaces.py:start():188] Started memory monitoring
+2024-07-08 18:56:02,734 INFO    SystemMonitor:53042 [interfaces.py:start():188] Started network monitoring
+2024-07-08 18:56:02,874 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:02,944 ERROR   HandlerThread:53042 [gpu_apple.py:probe():176] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 164, in probe
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:02,944 DEBUG   HandlerThread:53042 [system_info.py:probe():152] Probing system
+2024-07-08 18:56:02,946 DEBUG   HandlerThread:53042 [gitlib.py:_init_repo():56] git repository is invalid
+2024-07-08 18:56:02,946 DEBUG   HandlerThread:53042 [system_info.py:probe():200] Probing system done
+2024-07-08 18:56:02,946 DEBUG   HandlerThread:53042 [system_monitor.py:probe():223] {'os': 'macOS-14.5-arm64-arm-64bit', 'python': '3.10.14', 'heartbeatAt': '2024-07-08T13:26:02.944309', 'startedAt': '2024-07-08T13:26:01.748178', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'host': 'Deepaks-Laptop.local', 'username': 'deepakmishra', 'executable': '/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 4056, 'min': 744, 'max': 4056}, 'cpu_freq_per_core': [{'current': 4056, 'min': 744, 'max': 4056}], 'disk': {'/': {'total': 460.4317207336426, 'used': 9.559677124023438}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-07-08 18:56:02,946 INFO    HandlerThread:53042 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-08 18:56:02,947 INFO    HandlerThread:53042 [system_monitor.py:probe():227] Publishing system info
+2024-07-08 18:56:02,947 INFO    HandlerThread:53042 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-08 18:56:02,949 DEBUG   SenderThread:53042 [sender.py:send():379] send: files
+2024-07-08 18:56:02,949 INFO    SenderThread:53042 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-08 18:56:03,056 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-08 18:56:03,056 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: python_packages
+2024-07-08 18:56:03,056 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 18:56:03,056 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 18:56:03,057 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:03,456 DEBUG   SenderThread:53042 [sender.py:send():379] send: telemetry
+2024-07-08 18:56:03,456 DEBUG   SenderThread:53042 [sender.py:send():379] send: config
+2024-07-08 18:56:03,458 DEBUG   SenderThread:53042 [sender.py:send():379] send: telemetry
+2024-07-08 18:56:03,458 DEBUG   SenderThread:53042 [sender.py:send():379] send: metric
+2024-07-08 18:56:03,458 DEBUG   SenderThread:53042 [sender.py:send():379] send: telemetry
+2024-07-08 18:56:03,458 DEBUG   SenderThread:53042 [sender.py:send():379] send: metric
+2024-07-08 18:56:03,458 WARNING SenderThread:53042 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-07-08 18:56:03,458 DEBUG   SenderThread:53042 [sender.py:send():379] send: telemetry
+2024-07-08 18:56:03,458 DEBUG   SenderThread:53042 [sender.py:send():379] send: telemetry
+2024-07-08 18:56:03,458 DEBUG   SenderThread:53042 [sender.py:send():379] send: config
+2024-07-08 18:56:03,469 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: log_artifact
+2024-07-08 18:56:03,470 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: log_artifact
+2024-07-08 18:56:03,601 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/wandb-metadata.json
+2024-07-08 18:56:03,601 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:56:03,601 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/requirements.txt
+2024-07-08 18:56:04,061 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:04,166 INFO    wandb-upload_0:53042 [upload_job.py:push():130] Uploaded file /var/folders/rk/ds2_m3hn5r798jxgc634swrh0000gn/T/tmpbgoq_9u5wandb/tb4yes9w-wandb-metadata.json
+2024-07-08 18:56:05,066 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:05,114 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:05,611 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:56:06,070 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:07,075 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:07,233 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:07,242 INFO    wandb-upload_0:53042 [upload_job.py:push():88] Uploaded file /var/folders/rk/ds2_m3hn5r798jxgc634swrh0000gn/T/tmpo97yhixd/model_architecture.txt
+2024-07-08 18:56:08,080 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:08,605 INFO    SenderThread:53042 [sender.py:send_request_log_artifact():1518] logged artifact model-3xr0hxwp - {'id': 'QXJ0aWZhY3Q6OTQ5MjcyNDgx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0Njc3MjA4NA==', 'latestArtifact': None}}
+2024-07-08 18:56:08,605 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:56:09,086 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:09,351 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:09,625 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:56:10,091 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:11,096 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:11,471 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:12,101 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:13,102 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:13,594 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:14,068 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:56:14,104 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:15,109 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:15,717 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:16,110 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:17,115 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:17,836 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:18,061 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 18:56:18,061 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 18:56:18,120 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:19,125 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:19,485 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:56:19,669 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:56:19,957 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:20,127 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:21,132 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:22,077 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:22,137 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:23,142 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:24,147 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:24,271 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:25,077 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:56:25,152 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:26,153 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:26,394 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:27,155 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:28,160 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:28,529 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:29,165 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:30,083 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:56:30,169 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:30,653 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:31,170 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:32,175 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:32,781 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:33,066 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 18:56:33,066 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 18:56:33,180 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:34,186 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:34,974 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:35,191 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:35,498 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:56:35,747 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:56:36,193 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:36,752 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/config.yaml
+2024-07-08 18:56:37,098 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:37,194 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:38,199 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:39,204 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:39,231 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:40,209 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:41,093 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:56:41,214 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:41,351 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:42,219 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:43,220 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:43,470 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:44,221 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:45,222 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:45,592 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:46,103 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:56:46,227 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:47,232 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:47,715 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:48,071 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 18:56:48,071 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 18:56:48,237 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:49,242 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:49,806 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:56:49,839 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:50,247 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:51,252 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:51,505 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:56:52,034 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:52,257 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:53,262 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:54,169 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:54,267 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:55,272 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:56,277 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:56,291 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:57,112 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:56:57,282 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:58,287 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:56:58,486 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:56:59,292 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:00,297 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:00,610 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:01,302 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:02,121 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:57:02,307 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:02,734 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:02,735 DEBUG   SystemMonitor:53042 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-08 18:57:02,736 DEBUG   SenderThread:53042 [sender.py:send():379] send: telemetry
+2024-07-08 18:57:02,736 DEBUG   SenderThread:53042 [sender.py:send():379] send: stats
+2024-07-08 18:57:03,076 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 18:57:03,076 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 18:57:03,309 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:04,314 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:04,930 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:05,318 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:05,881 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:57:06,321 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:07,051 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:07,326 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:07,515 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:57:07,892 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/config.yaml
+2024-07-08 18:57:08,331 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:09,169 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:09,336 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:10,341 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:11,295 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:11,346 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:12,348 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:13,118 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:57:13,353 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:13,423 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:14,358 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:15,363 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:15,563 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:16,366 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:17,371 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:17,761 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:18,081 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 18:57:18,081 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 18:57:18,376 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:18,544 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:57:19,381 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:19,948 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:57:19,971 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:20,385 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:21,390 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:22,113 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:22,396 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:23,401 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:24,134 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:57:24,242 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:24,406 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:25,411 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:26,416 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:26,451 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:27,421 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:28,426 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:28,580 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:29,138 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:57:29,431 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:30,435 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:30,708 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:31,440 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:32,445 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:32,741 DEBUG   SenderThread:53042 [sender.py:send():379] send: stats
+2024-07-08 18:57:32,837 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:33,085 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 18:57:33,085 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 18:57:33,450 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:34,454 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:34,509 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:57:34,969 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:35,459 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:36,025 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:57:36,464 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:37,169 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:37,468 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:38,472 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:39,299 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:39,477 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:40,144 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:57:40,482 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:41,488 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:41,500 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:42,492 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:43,497 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:43,631 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:44,502 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:45,175 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:57:45,507 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:45,774 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:46,509 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:47,510 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:47,907 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:48,083 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 18:57:48,083 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 18:57:48,515 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:49,519 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:50,089 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:57:50,122 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:50,516 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:57:50,523 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:51,528 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:52,265 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:52,528 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:53,533 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:54,466 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:54,538 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:55,543 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:56,167 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:57:56,548 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:56,666 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:57,548 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:58,553 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:57:58,797 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:57:59,558 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:00,560 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:00,947 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:01,565 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:02,171 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:58:02,570 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:02,743 DEBUG   SenderThread:53042 [sender.py:send():379] send: stats
+2024-07-08 18:58:03,087 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 18:58:03,087 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 18:58:03,150 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:03,575 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:04,149 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:58:04,580 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:05,355 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:05,585 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:06,590 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:07,552 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:58:07,560 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:07,595 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:08,600 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:09,605 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:09,691 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:10,610 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:11,613 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:11,891 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:12,619 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:13,168 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:58:13,619 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:14,027 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:14,622 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:15,626 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:16,169 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:16,631 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:17,636 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:18,092 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 18:58:18,092 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 18:58:18,374 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:18,515 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:58:18,641 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:19,643 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:20,221 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:58:20,583 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:20,647 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:21,649 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:22,654 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:22,724 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:23,655 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:24,179 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:58:24,660 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:24,868 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:25,665 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:26,670 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:27,076 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:27,672 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:28,677 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:29,181 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:58:29,280 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:29,682 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:30,683 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:31,421 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:31,684 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:32,689 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:32,748 DEBUG   SenderThread:53042 [sender.py:send():379] send: stats
+2024-07-08 18:58:33,094 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 18:58:33,094 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 18:58:33,559 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:33,689 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:34,274 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:58:34,527 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:58:34,694 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:35,698 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:35,762 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:36,703 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:37,708 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:37,892 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:38,711 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:39,714 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:40,132 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:40,195 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:58:40,717 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:41,718 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:42,353 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:42,723 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:43,728 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:44,494 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:44,733 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:45,200 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:58:45,738 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:46,703 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:46,743 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:47,745 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:48,099 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 18:58:48,099 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 18:58:48,750 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:48,845 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:49,755 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:50,348 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:58:50,558 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:58:50,760 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:50,978 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:51,765 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:52,770 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:53,183 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:53,775 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:54,780 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:55,387 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:55,785 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:56,212 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:58:56,790 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:57,592 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:57,795 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:58,800 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:58:59,791 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:58:59,805 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:00,810 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:01,217 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:59:01,815 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:01,933 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:02,753 DEBUG   SenderThread:53042 [sender.py:send():379] send: stats
+2024-07-08 18:59:02,820 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:03,104 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 18:59:03,104 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 18:59:03,825 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:04,084 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:04,830 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:05,831 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:06,282 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:06,419 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:59:06,613 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:59:06,836 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:07,841 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:08,483 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:08,846 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:09,847 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:10,623 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:10,852 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:11,857 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:12,226 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:59:12,770 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:12,862 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:13,866 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:14,871 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:14,915 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:15,875 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:16,880 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:17,121 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:17,226 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:59:17,883 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:18,109 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 18:59:18,109 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 18:59:18,888 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:19,251 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:19,893 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:20,479 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:59:20,898 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:21,387 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:21,903 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:22,546 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:59:22,908 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:23,518 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:23,913 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:24,917 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:25,661 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:25,922 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:26,927 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:27,874 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:27,930 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:28,227 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:59:28,935 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:29,941 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:30,016 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:30,941 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:31,946 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:32,216 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:32,755 DEBUG   SenderThread:53042 [sender.py:send():379] send: stats
+2024-07-08 18:59:32,947 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:33,114 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 18:59:33,114 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 18:59:33,479 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:59:33,952 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:34,421 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:34,526 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:59:34,958 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:35,962 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:36,627 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:36,968 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:37,973 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:38,769 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:38,978 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:39,240 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:59:39,983 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:40,983 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:41,011 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:41,988 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:42,993 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:43,142 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:43,998 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:44,245 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:59:45,003 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:45,271 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:46,008 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:47,013 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:47,411 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:48,018 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:48,119 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 18:59:48,119 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 18:59:49,023 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:49,549 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:49,560 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:59:50,028 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:50,602 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 18:59:51,030 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:51,694 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:52,032 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:53,035 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:53,832 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:54,038 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:55,043 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:55,256 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 18:59:55,976 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:56,046 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:57,050 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:58,056 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 18:59:58,115 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 18:59:59,060 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 19:00:00,064 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 19:00:00,258 ERROR   gpuapple  :53042 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-07-08 19:00:00,265 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 19:00:01,069 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 19:00:02,083 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 19:00:02,103 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: pause
+2024-07-08 19:00:02,103 INFO    HandlerThread:53042 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-07-08 19:00:02,103 INFO    HandlerThread:53042 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-08 19:00:02,103 DEBUG   SystemMonitor:53042 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-08 19:00:02,103 DEBUG   SystemMonitor:53042 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-08 19:00:02,103 INFO    HandlerThread:53042 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-08 19:00:02,103 INFO    HandlerThread:53042 [interfaces.py:finish():200] Joined disk monitor
+2024-07-08 19:00:02,103 INFO    HandlerThread:53042 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-07-08 19:00:02,103 INFO    HandlerThread:53042 [interfaces.py:finish():200] Joined memory monitor
+2024-07-08 19:00:02,103 INFO    HandlerThread:53042 [interfaces.py:finish():200] Joined network monitor
+2024-07-08 19:00:02,104 DEBUG   SenderThread:53042 [sender.py:send():379] send: stats
+2024-07-08 19:00:03,083 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 19:00:03,125 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 19:00:03,125 DEBUG   SenderThread:53042 [sender.py:send_request():406] send_request: stop_status
+2024-07-08 19:00:04,084 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 19:00:04,663 INFO    Thread-12 :53042 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/deepakmishra/work/finetune-llm/tiny-llama/wandb/run-20240708_185601-3xr0hxwp/files/output.log
+2024-07-08 19:00:05,088 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 19:00:05,617 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 19:00:06,088 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 19:00:07,093 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-08 19:00:08,096 DEBUG   HandlerThread:53042 [handler.py:handle_request():158] handle_request: internal_messages

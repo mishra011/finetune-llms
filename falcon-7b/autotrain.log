@@ -1,0 +1,356 @@
+Your installed package `nvidia-ml-py` is corrupted. Skip patch functions `nvmlDeviceGet{Compute,Graphics,MPSCompute}RunningProcesses`. You may get incorrect or incomplete results. Please consider reinstall package `nvidia-ml-py` via `pip3 install --force-reinstall nvidia-ml-py nvitop`.
+Your installed package `nvidia-ml-py` is corrupted. Skip patch functions `nvmlDeviceGetMemoryInfo`. You may get incorrect or incomplete results. Please consider reinstall package `nvidia-ml-py` via `pip3 install --force-reinstall nvidia-ml-py nvitop`.
+INFO     | 2024-07-04 18:02:54 | autotrain.app.ui_routes:<module>:31 - Starting AutoTrain...
+INFO     | 2024-07-04 18:03:04 | autotrain.app.ui_routes:<module>:293 - AutoTrain started successfully
+INFO     | 2024-07-04 18:03:04 | autotrain.app.app:<module>:13 - Starting AutoTrain...
+INFO     | 2024-07-04 18:03:04 | autotrain.app.app:<module>:23 - AutoTrain version: 0.8.2
+INFO     | 2024-07-04 18:03:04 | autotrain.app.app:<module>:24 - AutoTrain started successfully
+INFO:     Started server process [11024]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:10000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:51270 - "GET /ui/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51270 - "GET /static/scripts/fetch_data_and_update_models.js?cb=2024-07-04%2018:03:09 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51270 - "GET /static/scripts/poll.js?cb=2024-07-04%2018:03:09 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51271 - "GET /static/scripts/listeners.js?cb=2024-07-04%2018:03:09 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51276 - "GET /static/scripts/utils.js?cb=2024-07-04%2018:03:09 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51277 - "GET /static/scripts/logs.js?cb=2024-07-04%2018:03:09 HTTP/1.1" 200 OK
+INFO     | 2024-07-04 18:03:10 | autotrain.app.ui_routes:fetch_params:376 - Task: llm:sft
+INFO:     127.0.0.1:51270 - "GET /ui/params/llm%3Asft/basic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51271 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51277 - "GET /ui/model_choices/llm%3Asft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51276 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51276 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51289 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51276 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51289 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51289 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51293 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51293 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51293 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51297 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51297 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51303 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51297 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51297 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51297 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51307 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51307 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51311 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51307 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51307 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51320 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51307 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51307 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51324 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51307 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51307 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51307 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51331 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51331 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51331 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51335 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51335 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51339 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51335 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51335 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51343 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51335 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51335 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51352 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51335 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51335 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51356 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51335 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51335 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51335 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51360 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51360 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51360 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51364 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51364 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51368 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51364 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51364 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51372 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51364 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51364 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51364 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51381 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51381 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51381 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51385 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51385 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51389 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51385 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO     | 2024-07-04 18:06:41 | autotrain.app.ui_routes:handle_form:491 - hardware: local-ui
+INFO     | 2024-07-04 18:06:41 | autotrain.backends.local:create:8 - Starting local training...
+INFO     | 2024-07-04 18:06:41 | autotrain.commands:launch_command:400 - ['accelerate', 'launch', '--num_machines', '1', '--num_processes', '1', '--mixed_precision', 'fp16', '-m', 'autotrain.trainers.clm', '--training_config', 'autotrain-pnzdi-k67tq/training_params.json']
+INFO     | 2024-07-04 18:06:41 | autotrain.commands:launch_command:401 - {'model': 'google/gemma-2b', 'project_name': 'autotrain-pnzdi-k67tq', 'data_path': 'timdettmers/openassistant-guanaco', 'train_split': 'train', 'valid_split': None, 'add_eos_token': True, 'block_size': 1024, 'model_max_length': 2048, 'padding': 'right', 'trainer': 'sft', 'use_flash_attention_2': False, 'log': 'tensorboard', 'disable_gradient_checkpointing': False, 'logging_steps': -1, 'eval_strategy': 'epoch', 'save_total_limit': 1, 'auto_find_batch_size': False, 'mixed_precision': 'fp16', 'lr': 3e-05, 'epochs': 1, 'batch_size': 2, 'warmup_ratio': 0.1, 'gradient_accumulation': 4, 'optimizer': 'adamw_torch', 'scheduler': 'linear', 'weight_decay': 0.0, 'max_grad_norm': 1.0, 'seed': 42, 'chat_template': 'none', 'quantization': 'int4', 'target_modules': 'all-linear', 'merge_adapter': False, 'peft': True, 'lora_r': 16, 'lora_alpha': 32, 'lora_dropout': 0.05, 'model_ref': None, 'dpo_beta': 0.1, 'max_prompt_length': 128, 'max_completion_length': None, 'prompt_text_column': 'prompt', 'text_column': 'text', 'rejected_text_column': 'rejected_text', 'push_to_hub': True, 'username': 'mishra011ai', 'token': '*****', 'unsloth': False}
+INFO     | 2024-07-04 18:06:41 | autotrain.backends.local:create:13 - Training PID: 11052
+INFO:     127.0.0.1:51392 - "POST /ui/create_project HTTP/1.1" 200 OK
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+INFO:     127.0.0.1:51392 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO     | 2024-07-04 18:06:47 | autotrain.trainers.clm.train_clm_sft:train:12 - Starting SFT training...
+Repo card metadata block was not found. Setting CardData to empty.
+INFO:     127.0.0.1:51402 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51392 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO     | 2024-07-04 18:06:52 | autotrain.trainers.clm.utils:process_input_data:394 - Train data: Dataset({
+    features: ['text'],
+    num_rows: 9846
+})
+INFO     | 2024-07-04 18:06:52 | autotrain.trainers.clm.utils:process_input_data:395 - Valid data: None
+ERROR    | 2024-07-04 18:06:53 | autotrain.trainers.common:wrapper:120 - train has failed due to an exception: Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/huggingface_hub/utils/_errors.py", line 304, in hf_raise_for_status
+    response.raise_for_status()
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://huggingface.co/google/gemma-2b/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/transformers/utils/hub.py", line 402, in cached_file
+    resolved_file = hf_hub_download(
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1221, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1325, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1823, in _raise_on_head_call_error
+    raise head_call_error
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1722, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(url=url, proxies=proxies, timeout=etag_timeout, headers=headers)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1645, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 372, in _request_wrapper
+    response = _request_wrapper(
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 396, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/huggingface_hub/utils/_errors.py", line 321, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 403 Client Error. (Request ID: Root=1-66869765-147b68a6608d961820553d09;cf636ecc-047a-4ee5-8377-d2279e7fb2cd)
+
+Cannot access gated repo for url https://huggingface.co/google/gemma-2b/resolve/main/config.json.
+Access to model google/gemma-2b is restricted and you are not in the authorized list. Visit https://huggingface.co/google/gemma-2b to ask for access.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/autotrain/trainers/common.py", line 117, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/autotrain/trainers/clm/__main__.py", line 28, in train
+    train_sft(config)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/autotrain/trainers/clm/train_clm_sft.py", line 16, in train
+    tokenizer = utils.get_tokenizer(config)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/autotrain/trainers/clm/utils.py", line 422, in get_tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 846, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 965, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/transformers/configuration_utils.py", line 632, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/transformers/utils/hub.py", line 420, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/google/gemma-2b.
+403 Client Error. (Request ID: Root=1-66869765-147b68a6608d961820553d09;cf636ecc-047a-4ee5-8377-d2279e7fb2cd)
+
+Cannot access gated repo for url https://huggingface.co/google/gemma-2b/resolve/main/config.json.
+Access to model google/gemma-2b is restricted and you are not in the authorized list. Visit https://huggingface.co/google/gemma-2b to ask for access.
+
+ERROR    | 2024-07-04 18:06:53 | autotrain.trainers.common:wrapper:121 - You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/google/gemma-2b.
+403 Client Error. (Request ID: Root=1-66869765-147b68a6608d961820553d09;cf636ecc-047a-4ee5-8377-d2279e7fb2cd)
+
+Cannot access gated repo for url https://huggingface.co/google/gemma-2b/resolve/main/config.json.
+Access to model google/gemma-2b is restricted and you are not in the authorized list. Visit https://huggingface.co/google/gemma-2b to ask for access.
+INFO     | 2024-07-04 18:06:56 | autotrain.app.utils:get_running_jobs:26 - Killing PID: 11052
+INFO     | 2024-07-04 18:06:56 | autotrain.app.utils:kill_process_by_pid:52 - Sent SIGTERM to process with PID 11052
+INFO:     127.0.0.1:51392 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51392 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51408 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51408 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51408 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51412 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51412 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51412 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51419 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51419 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51423 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51419 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51419 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51427 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51419 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51419 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51419 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51431 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51431 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51435 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51431 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51431 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51431 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51439 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51439 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51439 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51446 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51446 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51450 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51446 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51446 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51446 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51454 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51454 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51458 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51454 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51454 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51465 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51454 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51454 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51472 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51454 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51472 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51481 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51472 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51472 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51493 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51472 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51472 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51505 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51472 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51472 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51472 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51511 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51511 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51515 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51511 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51511 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51519 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51511 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51511 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51511 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51523 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51523 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51531 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51523 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51523 - "GET /ui/model_choices/llm%3Aorpo HTTP/1.1" 200 OK
+INFO     | 2024-07-04 18:10:35 | autotrain.app.ui_routes:fetch_params:376 - Task: llm:orpo
+INFO:     127.0.0.1:51531 - "GET /ui/params/llm%3Aorpo/basic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51523 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51523 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51531 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51531 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51531 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51541 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51541 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51541 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51545 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51545 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51545 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51550 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51545 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51545 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51554 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO     | 2024-07-04 18:11:24 | autotrain.app.ui_routes:handle_form:491 - hardware: local-ui
+INFO     | 2024-07-04 18:11:24 | autotrain.backends.local:create:8 - Starting local training...
+INFO     | 2024-07-04 18:11:24 | autotrain.commands:launch_command:400 - ['accelerate', 'launch', '--num_machines', '1', '--num_processes', '1', '--mixed_precision', 'fp16', '-m', 'autotrain.trainers.clm', '--training_config', 'autotrain-pnzdi-k67tq/training_params.json']
+INFO     | 2024-07-04 18:11:24 | autotrain.commands:launch_command:401 - {'model': 'tiiuae/falcon-7b-instruct', 'project_name': 'autotrain-pnzdi-k67tq', 'data_path': 'timdettmers/openassistant-guanaco', 'train_split': 'train', 'valid_split': None, 'add_eos_token': True, 'block_size': 1024, 'model_max_length': 2048, 'padding': 'right', 'trainer': 'orpo', 'use_flash_attention_2': False, 'log': 'tensorboard', 'disable_gradient_checkpointing': False, 'logging_steps': -1, 'eval_strategy': 'epoch', 'save_total_limit': 1, 'auto_find_batch_size': False, 'mixed_precision': 'fp16', 'lr': 3e-05, 'epochs': 1, 'batch_size': 2, 'warmup_ratio': 0.1, 'gradient_accumulation': 4, 'optimizer': 'adamw_torch', 'scheduler': 'linear', 'weight_decay': 0.0, 'max_grad_norm': 1.0, 'seed': 42, 'chat_template': 'none', 'quantization': 'int4', 'target_modules': 'all-linear', 'merge_adapter': False, 'peft': True, 'lora_r': 16, 'lora_alpha': 32, 'lora_dropout': 0.05, 'model_ref': None, 'dpo_beta': 0.1, 'max_prompt_length': 128, 'max_completion_length': None, 'prompt_text_column': 'prompt', 'text_column': 'chosen', 'rejected_text_column': 'rejected', 'push_to_hub': True, 'username': 'mishra011ai', 'token': '*****', 'unsloth': False}
+INFO     | 2024-07-04 18:11:24 | autotrain.backends.local:create:13 - Training PID: 11081
+INFO:     127.0.0.1:51554 - "POST /ui/create_project HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51554 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+INFO     | 2024-07-04 18:11:30 | autotrain.trainers.clm.train_clm_orpo:train:11 - Starting ORPO training...
+INFO:     127.0.0.1:51554 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51567 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+Repo card metadata block was not found. Setting CardData to empty.
+INFO:     127.0.0.1:51567 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+ERROR    | 2024-07-04 18:11:36 | autotrain.trainers.common:wrapper:120 - train has failed due to an exception: Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/autotrain/trainers/common.py", line 117, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/autotrain/trainers/clm/__main__.py", line 43, in train
+    train_orpo(config)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/autotrain/trainers/clm/train_clm_orpo.py", line 14, in train
+    train_data, valid_data = utils.process_input_data(config)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/autotrain/trainers/clm/utils.py", line 355, in process_input_data
+    train_data = train_data.rename_column(config.text_column, "chosen")
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 602, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/datasets/fingerprint.py", line 482, in wrapper
+    out = func(dataset, *args, **kwargs)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2259, in rename_column
+    raise ValueError(
+ValueError: Original column name chosen not in the dataset. Current columns in the dataset: ['text']
+
+ERROR    | 2024-07-04 18:11:36 | autotrain.trainers.common:wrapper:121 - Original column name chosen not in the dataset. Current columns in the dataset: ['text']
+INFO:     127.0.0.1:51567 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO     | 2024-07-04 18:11:41 | autotrain.app.utils:get_running_jobs:26 - Killing PID: 11081
+INFO     | 2024-07-04 18:11:41 | autotrain.app.utils:kill_process_by_pid:52 - Sent SIGTERM to process with PID 11081
+INFO:     127.0.0.1:51577 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51577 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51581 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51577 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51577 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51577 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51585 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51585 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO     | 2024-07-04 18:12:10 | autotrain.app.ui_routes:handle_form:491 - hardware: local-ui
+INFO     | 2024-07-04 18:12:10 | autotrain.backends.local:create:8 - Starting local training...
+INFO     | 2024-07-04 18:12:10 | autotrain.commands:launch_command:400 - ['accelerate', 'launch', '--num_machines', '1', '--num_processes', '1', '--mixed_precision', 'fp16', '-m', 'autotrain.trainers.clm', '--training_config', 'autotrain-pnzdi-k67tq/training_params.json']
+INFO     | 2024-07-04 18:12:10 | autotrain.commands:launch_command:401 - {'model': 'tiiuae/falcon-7b-instruct', 'project_name': 'autotrain-pnzdi-k67tq', 'data_path': 'timdettmers/openassistant-guanaco', 'train_split': 'train', 'valid_split': None, 'add_eos_token': True, 'block_size': 1024, 'model_max_length': 2048, 'padding': 'right', 'trainer': 'orpo', 'use_flash_attention_2': False, 'log': 'tensorboard', 'disable_gradient_checkpointing': False, 'logging_steps': -1, 'eval_strategy': 'epoch', 'save_total_limit': 1, 'auto_find_batch_size': False, 'mixed_precision': 'fp16', 'lr': 3e-05, 'epochs': 1, 'batch_size': 2, 'warmup_ratio': 0.1, 'gradient_accumulation': 4, 'optimizer': 'adamw_torch', 'scheduler': 'linear', 'weight_decay': 0.0, 'max_grad_norm': 1.0, 'seed': 42, 'chat_template': 'none', 'quantization': 'int4', 'target_modules': 'all-linear', 'merge_adapter': False, 'peft': True, 'lora_r': 16, 'lora_alpha': 32, 'lora_dropout': 0.05, 'model_ref': None, 'dpo_beta': 0.1, 'max_prompt_length': 128, 'max_completion_length': None, 'prompt_text_column': 'prompt', 'text_column': 'text', 'rejected_text_column': 'rejected', 'push_to_hub': True, 'username': 'mishra011ai', 'token': '*****', 'unsloth': False}
+INFO     | 2024-07-04 18:12:10 | autotrain.backends.local:create:13 - Training PID: 11093
+INFO:     127.0.0.1:51585 - "POST /ui/create_project HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51590 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51591 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+INFO     | 2024-07-04 18:12:15 | autotrain.trainers.clm.train_clm_orpo:train:11 - Starting ORPO training...
+INFO:     127.0.0.1:51591 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+Repo card metadata block was not found. Setting CardData to empty.
+INFO:     127.0.0.1:51602 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51591 - "GET /ui/accelerators HTTP/1.1" 200 OK
+ERROR    | 2024-07-04 18:12:21 | autotrain.trainers.common:wrapper:120 - train has failed due to an exception: Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/autotrain/trainers/common.py", line 117, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/autotrain/trainers/clm/__main__.py", line 43, in train
+    train_orpo(config)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/autotrain/trainers/clm/train_clm_orpo.py", line 14, in train
+    train_data, valid_data = utils.process_input_data(config)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/autotrain/trainers/clm/utils.py", line 357, in process_input_data
+    train_data = train_data.rename_column(config.rejected_text_column, "rejected")
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 602, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/datasets/fingerprint.py", line 482, in wrapper
+    out = func(dataset, *args, **kwargs)
+  File "/Users/deepakmishra/.pyenv/versions/denv/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2259, in rename_column
+    raise ValueError(
+ValueError: Original column name rejected not in the dataset. Current columns in the dataset: ['chosen']
+
+ERROR    | 2024-07-04 18:12:21 | autotrain.trainers.common:wrapper:121 - Original column name rejected not in the dataset. Current columns in the dataset: ['chosen']
+INFO     | 2024-07-04 18:12:26 | autotrain.app.utils:get_running_jobs:26 - Killing PID: 11093
+INFO     | 2024-07-04 18:12:26 | autotrain.app.utils:kill_process_by_pid:52 - Sent SIGTERM to process with PID 11093
+INFO:     127.0.0.1:51591 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51612 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51591 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51591 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51591 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51620 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51624 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /ui/accelerators HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51628 - "GET /ui/is_model_training HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /ui/accelerators HTTP/1.1" 200 OK

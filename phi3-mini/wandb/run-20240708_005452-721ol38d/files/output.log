@@ -1,0 +1,1117 @@
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+  0%|          | 0/3187 [00:00<?, ?it/s]/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/transformers/trainer.py:3276: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  ctx_manager = torch.cpu.amp.autocast(cache_enabled=cache_enabled, dtype=self.amp_dtype)
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+[codecarbon INFO @ 00:55:09] Energy consumed for RAM : 0.000025 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:55:09] Energy consumed for all CPUs : 0.000177 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:55:09] 0.000202 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:55:24] Energy consumed for RAM : 0.000050 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:55:24] Energy consumed for all CPUs : 0.000354 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:55:24] 0.000404 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:55:39] Energy consumed for RAM : 0.000075 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:55:39] Energy consumed for all CPUs : 0.000531 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:55:39] 0.000606 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:55:54] Energy consumed for RAM : 0.000100 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:55:55] Energy consumed for all CPUs : 0.000709 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:55:55] 0.000809 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:56:10] Energy consumed for RAM : 0.000125 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:56:10] Energy consumed for all CPUs : 0.000886 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:56:10] 0.001011 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:56:25] Energy consumed for RAM : 0.000150 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:56:25] Energy consumed for all CPUs : 0.001063 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:56:25] 0.001213 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:56:40] Energy consumed for RAM : 0.000175 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:56:40] Energy consumed for all CPUs : 0.001240 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:56:40] 0.001415 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:56:55] Energy consumed for RAM : 0.000200 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:56:55] Energy consumed for all CPUs : 0.001417 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:56:55] 0.001617 kWh of electricity used since the beginning.
+[codecarbon WARNING @ 00:57:03] Already started tracking
+  0%|          | 0/3187 [02:08<?, ?it/s]
+[codecarbon INFO @ 00:57:10] Energy consumed for RAM : 0.000225 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:57:10] Energy consumed for all CPUs : 0.001594 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:57:10] 0.001819 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:57:25] Energy consumed for RAM : 0.000250 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:57:25] Energy consumed for all CPUs : 0.001771 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:57:25] 0.002021 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:57:40] Energy consumed for RAM : 0.000275 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:57:40] Energy consumed for all CPUs : 0.001948 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:57:40] 0.002223 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:57:55] Energy consumed for RAM : 0.000300 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:57:55] Energy consumed for all CPUs : 0.002125 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:57:55] 0.002425 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:58:10] Energy consumed for RAM : 0.000325 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:58:10] Energy consumed for all CPUs : 0.002302 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:58:10] 0.002627 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:58:25] Energy consumed for RAM : 0.000350 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:58:25] Energy consumed for all CPUs : 0.002480 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:58:25] 0.002830 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:58:40] Energy consumed for RAM : 0.000375 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:58:40] Energy consumed for all CPUs : 0.002657 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:58:40] 0.003032 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:58:55] Energy consumed for RAM : 0.000400 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:58:55] Energy consumed for all CPUs : 0.002834 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:58:55] 0.003234 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:59:10] Energy consumed for RAM : 0.000425 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:59:10] Energy consumed for all CPUs : 0.003011 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:59:10] 0.003436 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:59:25] Energy consumed for RAM : 0.000450 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:59:25] Energy consumed for all CPUs : 0.003188 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:59:25] 0.003638 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:59:40] Energy consumed for RAM : 0.000475 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:59:40] Energy consumed for all CPUs : 0.003365 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:59:40] 0.003840 kWh of electricity used since the beginning.
+[codecarbon INFO @ 00:59:55] Energy consumed for RAM : 0.000500 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 00:59:55] Energy consumed for all CPUs : 0.003542 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 00:59:55] 0.004042 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:00:10] Energy consumed for RAM : 0.000525 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:00:10] Energy consumed for all CPUs : 0.003719 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:00:10] 0.004244 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:00:25] Energy consumed for RAM : 0.000550 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:00:25] Energy consumed for all CPUs : 0.003896 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:00:25] 0.004446 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:00:40] Energy consumed for RAM : 0.000575 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:00:40] Energy consumed for all CPUs : 0.004074 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:00:40] 0.004649 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:00:55] Energy consumed for RAM : 0.000600 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:00:55] Energy consumed for all CPUs : 0.004251 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:00:55] 0.004851 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:01:10] Energy consumed for RAM : 0.000625 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:01:10] Energy consumed for all CPUs : 0.004428 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:01:10] 0.005053 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:01:25] Energy consumed for RAM : 0.000650 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:01:25] Energy consumed for all CPUs : 0.004605 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:01:25] 0.005255 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:01:40] Energy consumed for RAM : 0.000675 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:01:40] Energy consumed for all CPUs : 0.004782 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:01:40] 0.005457 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:01:55] Energy consumed for RAM : 0.000700 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:01:55] Energy consumed for all CPUs : 0.004959 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:01:55] 0.005659 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:02:10] Energy consumed for RAM : 0.000725 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:02:10] Energy consumed for all CPUs : 0.005136 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:02:10] 0.005861 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:02:25] Energy consumed for RAM : 0.000750 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:02:25] Energy consumed for all CPUs : 0.005313 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:02:25] 0.006063 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:02:40] Energy consumed for RAM : 0.000775 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:02:40] Energy consumed for all CPUs : 0.005490 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:02:40] 0.006265 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:02:55] Energy consumed for RAM : 0.000800 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:02:55] Energy consumed for all CPUs : 0.005668 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:02:55] 0.006468 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:03:10] Energy consumed for RAM : 0.000825 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:03:10] Energy consumed for all CPUs : 0.005845 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:03:10] 0.006670 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:03:25] Energy consumed for RAM : 0.000850 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:03:25] Energy consumed for all CPUs : 0.006022 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:03:25] 0.006872 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:03:40] Energy consumed for RAM : 0.000875 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:03:40] Energy consumed for all CPUs : 0.006199 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:03:40] 0.007074 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:03:55] Energy consumed for RAM : 0.000900 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:03:55] Energy consumed for all CPUs : 0.006376 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:03:55] 0.007276 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:04:10] Energy consumed for RAM : 0.000925 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:04:10] Energy consumed for all CPUs : 0.006553 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:04:10] 0.007478 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:04:25] Energy consumed for RAM : 0.000950 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:04:25] Energy consumed for all CPUs : 0.006730 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:04:25] 0.007680 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:04:40] Energy consumed for RAM : 0.000975 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:04:40] Energy consumed for all CPUs : 0.006907 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:04:40] 0.007882 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:04:55] Energy consumed for RAM : 0.001000 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:04:55] Energy consumed for all CPUs : 0.007084 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:04:55] 0.008084 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:05:10] Energy consumed for RAM : 0.001025 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:05:10] Energy consumed for all CPUs : 0.007262 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:05:10] 0.008287 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:05:25] Energy consumed for RAM : 0.001050 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:05:25] Energy consumed for all CPUs : 0.007439 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:05:25] 0.008489 kWh of electricity used since the beginning.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': dataset_text_field, max_seq_length. Will not be supported from version '1.0.0'.
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/transformers/training_args.py:1961: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:269: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:307: UserWarning: You passed a `dataset_text_field` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:397: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+[codecarbon INFO @ 01:05:40] Energy consumed for RAM : 0.001075 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:05:40] Energy consumed for all CPUs : 0.007616 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:05:40] 0.008691 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:05:55] Energy consumed for RAM : 0.001100 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:05:55] Energy consumed for all CPUs : 0.007793 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:05:55] 0.008893 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:06:10] Energy consumed for RAM : 0.001125 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:06:10] Energy consumed for all CPUs : 0.007970 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:06:10] 0.009095 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:06:25] Energy consumed for RAM : 0.001150 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:06:25] Energy consumed for all CPUs : 0.008147 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:06:25] 0.009297 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:06:33] [setup] RAM Tracking...
+[codecarbon INFO @ 01:06:33] [setup] GPU Tracking...
+[codecarbon INFO @ 01:06:33] No GPU found.
+[codecarbon INFO @ 01:06:33] [setup] CPU Tracking...
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[codecarbon WARNING @ 01:06:34] No CPU tracking mode found. Falling back on CPU constant mode.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[codecarbon WARNING @ 01:06:34] We saw that you have a Apple M3 but we don't know it. Please contact us.
+[codecarbon INFO @ 01:06:34] CPU Model on constant consumption mode: Apple M3
+[codecarbon INFO @ 01:06:34] >>> Tracker's metadata:
+[codecarbon INFO @ 01:06:34]   Platform system: macOS-14.5-arm64-arm-64bit
+[codecarbon INFO @ 01:06:34]   Python version: 3.10.14
+[codecarbon INFO @ 01:06:34]   CodeCarbon version: 2.3.5
+[codecarbon INFO @ 01:06:34]   Available RAM : 16.000 GB
+[codecarbon INFO @ 01:06:34]   CPU count: 8
+[codecarbon INFO @ 01:06:34]   CPU model: Apple M3
+[codecarbon INFO @ 01:06:34]   GPU count: None
+[codecarbon INFO @ 01:06:34]   GPU model: None
+[codecarbon INFO @ 01:06:40] Energy consumed for RAM : 0.001175 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:06:40] Energy consumed for all CPUs : 0.008324 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:06:40] 0.009499 kWh of electricity used since the beginning.
+  0%|          | 0/3187 [09:45<?, ?it/s]
+[codecarbon INFO @ 01:06:55] Energy consumed for RAM : 0.001200 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:06:55] Energy consumed for all CPUs : 0.008501 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:06:55] 0.009701 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:07:10] Energy consumed for RAM : 0.001225 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:07:10] Energy consumed for all CPUs : 0.008678 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:07:10] 0.009903 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:07:25] Energy consumed for RAM : 0.001250 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:07:25] Energy consumed for all CPUs : 0.008856 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:07:25] 0.010106 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:07:40] Energy consumed for RAM : 0.001275 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:07:40] Energy consumed for all CPUs : 0.009033 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:07:40] 0.010308 kWh of electricity used since the beginning.
+python(42591) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42594) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+  0%|          | 0/3187 [00:00<?, ?it/s]/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/transformers/trainer.py:3276: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  ctx_manager = torch.cpu.amp.autocast(cache_enabled=cache_enabled, dtype=self.amp_dtype)
+[codecarbon INFO @ 01:07:55] Energy consumed for RAM : 0.001300 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:07:55] Energy consumed for all CPUs : 0.009210 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:07:55] 0.010510 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:08:01] Energy consumed for RAM : 0.000025 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:08:01] Energy consumed for all CPUs : 0.000177 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:08:01] 0.000202 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:08:10] Energy consumed for RAM : 0.001325 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:08:10] Energy consumed for all CPUs : 0.009387 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:08:10] 0.010712 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:08:16] Energy consumed for RAM : 0.000050 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:08:16] Energy consumed for all CPUs : 0.000354 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:08:16] 0.000404 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:08:25] Energy consumed for RAM : 0.001350 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:08:25] Energy consumed for all CPUs : 0.009564 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:08:25] 0.010914 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:08:31] Energy consumed for RAM : 0.000075 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:08:31] Energy consumed for all CPUs : 0.000531 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:08:31] 0.000606 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:08:40] Energy consumed for RAM : 0.001375 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:08:40] Energy consumed for all CPUs : 0.009741 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:08:40] 0.011116 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:08:46] Energy consumed for RAM : 0.000100 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:08:46] Energy consumed for all CPUs : 0.000709 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:08:46] 0.000809 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:08:55] Energy consumed for RAM : 0.001400 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:08:55] Energy consumed for all CPUs : 0.009918 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:08:55] 0.011318 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:09:01] Energy consumed for RAM : 0.000125 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:09:01] Energy consumed for all CPUs : 0.000886 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:09:01] 0.001011 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:09:10] Energy consumed for RAM : 0.001425 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:09:10] Energy consumed for all CPUs : 0.010095 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:09:10] 0.011520 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:09:16] Energy consumed for RAM : 0.000150 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:09:16] Energy consumed for all CPUs : 0.001063 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:09:16] 0.001213 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:09:25] Energy consumed for RAM : 0.001450 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:09:25] Energy consumed for all CPUs : 0.010272 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:09:25] 0.011722 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:09:31] Energy consumed for RAM : 0.000175 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:09:31] Energy consumed for all CPUs : 0.001240 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:09:31] 0.001415 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:09:40] Energy consumed for RAM : 0.001475 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:09:40] Energy consumed for all CPUs : 0.010450 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:09:40] 0.011924 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:09:46] Energy consumed for RAM : 0.000200 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:09:46] Energy consumed for all CPUs : 0.001417 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:09:46] 0.001617 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:09:55] Energy consumed for RAM : 0.001500 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:09:55] Energy consumed for all CPUs : 0.010627 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:09:55] 0.012127 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:10:01] Energy consumed for RAM : 0.000225 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:10:01] Energy consumed for all CPUs : 0.001594 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:10:01] 0.001819 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:10:10] Energy consumed for RAM : 0.001525 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:10:10] Energy consumed for all CPUs : 0.010804 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:10:10] 0.012329 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:10:16] Energy consumed for RAM : 0.000250 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:10:16] Energy consumed for all CPUs : 0.001771 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:10:16] 0.002021 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:10:25] Energy consumed for RAM : 0.001550 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:10:25] Energy consumed for all CPUs : 0.010981 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:10:25] 0.012531 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:10:31] Energy consumed for RAM : 0.000275 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:10:31] Energy consumed for all CPUs : 0.001948 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:10:31] 0.002223 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:10:40] Energy consumed for RAM : 0.001575 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:10:40] Energy consumed for all CPUs : 0.011158 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:10:40] 0.012733 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:10:46] Energy consumed for RAM : 0.000300 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:10:46] Energy consumed for all CPUs : 0.002125 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:10:46] 0.002425 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:10:55] Energy consumed for RAM : 0.001600 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:10:55] Energy consumed for all CPUs : 0.011335 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:10:55] 0.012935 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:11:01] Energy consumed for RAM : 0.000325 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:11:01] Energy consumed for all CPUs : 0.002302 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:11:01] 0.002627 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:11:10] Energy consumed for RAM : 0.001625 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:11:10] Energy consumed for all CPUs : 0.011512 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:11:10] 0.013137 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:11:16] Energy consumed for RAM : 0.000350 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:11:16] Energy consumed for all CPUs : 0.002480 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:11:16] 0.002830 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:11:25] Energy consumed for RAM : 0.001650 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:11:25] Energy consumed for all CPUs : 0.011689 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:11:25] 0.013339 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:11:31] Energy consumed for RAM : 0.000375 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:11:31] Energy consumed for all CPUs : 0.002657 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:11:31] 0.003032 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:11:40] Energy consumed for RAM : 0.001675 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:11:40] Energy consumed for all CPUs : 0.011866 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:11:40] 0.013541 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:11:46] Energy consumed for RAM : 0.000400 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:11:46] Energy consumed for all CPUs : 0.002834 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:11:46] 0.003234 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:11:55] Energy consumed for RAM : 0.001700 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:11:55] Energy consumed for all CPUs : 0.012044 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:11:55] 0.013744 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:12:01] Energy consumed for RAM : 0.000425 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:12:01] Energy consumed for all CPUs : 0.003011 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:12:01] 0.003436 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:12:10] Energy consumed for RAM : 0.001725 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:12:10] Energy consumed for all CPUs : 0.012221 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:12:10] 0.013946 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:12:16] Energy consumed for RAM : 0.000450 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:12:16] Energy consumed for all CPUs : 0.003188 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:12:16] 0.003638 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:12:25] Energy consumed for RAM : 0.001750 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:12:25] Energy consumed for all CPUs : 0.012398 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:12:25] 0.014148 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:12:31] Energy consumed for RAM : 0.000475 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:12:31] Energy consumed for all CPUs : 0.003365 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:12:31] 0.003840 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:12:40] Energy consumed for RAM : 0.001775 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:12:40] Energy consumed for all CPUs : 0.012575 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:12:40] 0.014350 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:12:46] Energy consumed for RAM : 0.000500 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:12:46] Energy consumed for all CPUs : 0.003542 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:12:46] 0.004042 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:12:55] Energy consumed for RAM : 0.001800 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:12:55] Energy consumed for all CPUs : 0.012752 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:12:55] 0.014552 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:13:01] Energy consumed for RAM : 0.000525 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:13:01] Energy consumed for all CPUs : 0.003719 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:13:01] 0.004244 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:13:10] Energy consumed for RAM : 0.001825 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:13:10] Energy consumed for all CPUs : 0.012929 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:13:10] 0.014754 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:13:16] Energy consumed for RAM : 0.000550 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:13:16] Energy consumed for all CPUs : 0.003896 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:13:16] 0.004446 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:13:25] Energy consumed for RAM : 0.001850 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:13:25] Energy consumed for all CPUs : 0.013106 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:13:25] 0.014956 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:13:31] Energy consumed for RAM : 0.000575 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:13:31] Energy consumed for all CPUs : 0.004074 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:13:31] 0.004649 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:13:40] Energy consumed for RAM : 0.001875 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:13:40] Energy consumed for all CPUs : 0.013283 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:13:40] 0.015158 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:13:46] Energy consumed for RAM : 0.000600 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:13:46] Energy consumed for all CPUs : 0.004251 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:13:46] 0.004851 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:13:55] Energy consumed for RAM : 0.001900 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:13:55] Energy consumed for all CPUs : 0.013460 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:13:55] 0.015360 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:14:01] Energy consumed for RAM : 0.000625 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:14:01] Energy consumed for all CPUs : 0.004428 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:14:01] 0.005053 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:14:10] Energy consumed for RAM : 0.001925 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:14:10] Energy consumed for all CPUs : 0.013638 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:14:10] 0.015562 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:14:16] Energy consumed for RAM : 0.000650 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:14:16] Energy consumed for all CPUs : 0.004605 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:14:16] 0.005255 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:14:25] Energy consumed for RAM : 0.001950 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:14:25] Energy consumed for all CPUs : 0.013815 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:14:25] 0.015765 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:14:31] Energy consumed for RAM : 0.000675 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:14:31] Energy consumed for all CPUs : 0.004782 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:14:31] 0.005457 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:14:40] Energy consumed for RAM : 0.001975 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:14:40] Energy consumed for all CPUs : 0.013993 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:14:40] 0.015968 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:14:46] Energy consumed for RAM : 0.000700 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:14:46] Energy consumed for all CPUs : 0.004960 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:14:46] 0.005660 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:14:55] Energy consumed for RAM : 0.002000 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:14:55] Energy consumed for all CPUs : 0.014170 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:14:55] 0.016170 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:15:01] Energy consumed for RAM : 0.000725 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:15:01] Energy consumed for all CPUs : 0.005137 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:15:01] 0.005862 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:15:10] Energy consumed for RAM : 0.002025 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:15:10] Energy consumed for all CPUs : 0.014347 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:15:10] 0.016372 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:15:16] Energy consumed for RAM : 0.000750 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:15:16] Energy consumed for all CPUs : 0.005314 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:15:16] 0.006064 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:15:25] Energy consumed for RAM : 0.002050 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:15:25] Energy consumed for all CPUs : 0.014524 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:15:25] 0.016574 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:15:31] Energy consumed for RAM : 0.000775 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:15:31] Energy consumed for all CPUs : 0.005491 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:15:31] 0.006266 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:15:40] Energy consumed for RAM : 0.002075 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:15:40] Energy consumed for all CPUs : 0.014701 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:15:40] 0.016776 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:15:46] Energy consumed for RAM : 0.000800 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:15:46] Energy consumed for all CPUs : 0.005668 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:15:46] 0.006468 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:15:55] Energy consumed for RAM : 0.002100 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:15:55] Energy consumed for all CPUs : 0.014878 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:15:55] 0.016978 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:16:01] Energy consumed for RAM : 0.000825 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:16:01] Energy consumed for all CPUs : 0.005845 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:16:01] 0.006670 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:16:10] Energy consumed for RAM : 0.002125 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:16:10] Energy consumed for all CPUs : 0.015055 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:16:10] 0.017180 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:16:16] Energy consumed for RAM : 0.000850 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:16:16] Energy consumed for all CPUs : 0.006022 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:16:16] 0.006873 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:16:25] Energy consumed for RAM : 0.002150 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:16:25] Energy consumed for all CPUs : 0.015232 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:16:25] 0.017382 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:16:31] Energy consumed for RAM : 0.000875 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:16:31] Energy consumed for all CPUs : 0.006200 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:16:31] 0.007075 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:16:40] Energy consumed for RAM : 0.002175 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:16:40] Energy consumed for all CPUs : 0.015409 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:16:40] 0.017584 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:16:46] Energy consumed for RAM : 0.000900 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:16:46] Energy consumed for all CPUs : 0.006377 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:16:46] 0.007277 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:16:55] Energy consumed for RAM : 0.002200 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:16:55] Energy consumed for all CPUs : 0.015586 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:16:55] 0.017787 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:17:01] Energy consumed for RAM : 0.000925 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:17:01] Energy consumed for all CPUs : 0.006554 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:17:01] 0.007479 kWh of electricity used since the beginning.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/transformers/training_args.py:1509: FutureWarning: using `no_cuda` is deprecated and will be removed in version 5.0 of 🤗 Transformers. Use `use_cpu` instead
+  warnings.warn(
+python(42715) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': dataset_text_field, max_seq_length. Will not be supported from version '1.0.0'.
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/transformers/training_args.py:1961: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+python(42718) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:269: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:307: UserWarning: You passed a `dataset_text_field` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:397: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+[codecarbon INFO @ 01:17:10] Energy consumed for RAM : 0.002225 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:17:10] Energy consumed for all CPUs : 0.015764 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:17:10] 0.017989 kWh of electricity used since the beginning.
+python(42721) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42724) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42727) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:17:16] Energy consumed for RAM : 0.000950 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:17:16] Energy consumed for all CPUs : 0.006731 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:17:16] 0.007681 kWh of electricity used since the beginning.
+python(42731) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42736) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42742) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42747) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:17:25] Energy consumed for RAM : 0.002250 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:17:25] Energy consumed for all CPUs : 0.015941 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:17:25] 0.018191 kWh of electricity used since the beginning.
+python(42751) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42757) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42761) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:17:31] Energy consumed for RAM : 0.000975 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:17:31] Energy consumed for all CPUs : 0.006908 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:17:31] 0.007883 kWh of electricity used since the beginning.
+python(42766) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42770) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42773) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42776) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:17:40] Energy consumed for RAM : 0.002275 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:17:40] Energy consumed for all CPUs : 0.016118 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:17:40] 0.018393 kWh of electricity used since the beginning.
+python(42779) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42782) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:17:46] Energy consumed for RAM : 0.001000 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:17:46] Energy consumed for all CPUs : 0.007085 kWh. Total CPU Power : 42.5 W
+python(42785) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:17:46] 0.008085 kWh of electricity used since the beginning.
+python(42788) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42791) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42794) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42797) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:17:55] Energy consumed for RAM : 0.002300 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:17:55] Energy consumed for all CPUs : 0.016295 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:17:55] 0.018595 kWh of electricity used since the beginning.
+python(42800) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42805) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:18:01] Energy consumed for RAM : 0.001025 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:18:01] Energy consumed for all CPUs : 0.007262 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:18:01] 0.008287 kWh of electricity used since the beginning.
+python(42812) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42815) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42818) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42821) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:18:10] Energy consumed for RAM : 0.002325 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:18:10] Energy consumed for all CPUs : 0.016472 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:18:10] 0.018797 kWh of electricity used since the beginning.
+python(42826) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42829) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42832) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:18:16] Energy consumed for RAM : 0.001050 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:18:16] Energy consumed for all CPUs : 0.007439 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:18:16] 0.008489 kWh of electricity used since the beginning.
+python(42835) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42838) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:18:20] [setup] RAM Tracking...
+[codecarbon INFO @ 01:18:20] [setup] GPU Tracking...
+[codecarbon INFO @ 01:18:20] No GPU found.
+[codecarbon INFO @ 01:18:20] [setup] CPU Tracking...
+python(42841) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+python(42846) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[codecarbon WARNING @ 01:18:20] No CPU tracking mode found. Falling back on CPU constant mode.
+python(42849) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[codecarbon WARNING @ 01:18:20] We saw that you have a Apple M3 but we don't know it. Please contact us.
+[codecarbon INFO @ 01:18:20] CPU Model on constant consumption mode: Apple M3
+[codecarbon INFO @ 01:18:20] >>> Tracker's metadata:
+[codecarbon INFO @ 01:18:20]   Platform system: macOS-14.5-arm64-arm-64bit
+[codecarbon INFO @ 01:18:20]   Python version: 3.10.14
+[codecarbon INFO @ 01:18:20]   CodeCarbon version: 2.3.5
+[codecarbon INFO @ 01:18:20]   Available RAM : 16.000 GB
+[codecarbon INFO @ 01:18:20]   CPU count: 8
+[codecarbon INFO @ 01:18:20]   CPU model: Apple M3
+[codecarbon INFO @ 01:18:20]   GPU count: None
+[codecarbon INFO @ 01:18:20]   GPU model: None
+python(42854) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42857) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:18:25] Energy consumed for RAM : 0.002350 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:18:25] Energy consumed for all CPUs : 0.016649 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:18:25] 0.018999 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:18:31] Energy consumed for RAM : 0.001075 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:18:31] Energy consumed for all CPUs : 0.007616 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:18:31] 0.008691 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:18:40] Energy consumed for RAM : 0.002375 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:18:40] Energy consumed for all CPUs : 0.016826 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:18:40] 0.019201 kWh of electricity used since the beginning.
+python(42883) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+Traceback (most recent call last):
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/IPython/core/completer.py", line 3171, in _complete
+    result = matcher(context)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/IPython/core/completer.py", line 2099, in magic_matcher
+    matches = self.magic_matches(text)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/IPython/core/completer.py", line 2132, in magic_matches
+    global_matches = self.global_matches(bare_text)
+  File "/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/IPython/core/completer.py", line 1113, in global_matches
+    for word in lst:
+RuntimeError: dictionary changed size during iteration
+python(42886) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:18:46] Energy consumed for RAM : 0.001100 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:18:46] Energy consumed for all CPUs : 0.007793 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:18:46] 0.008894 kWh of electricity used since the beginning.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': dataset_text_field, max_seq_length. Will not be supported from version '1.0.0'.
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/transformers/training_args.py:1509: FutureWarning: using `no_cuda` is deprecated and will be removed in version 5.0 of 🤗 Transformers. Use `use_cpu` instead
+  warnings.warn(
+python(42889) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/transformers/training_args.py:1961: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:269: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:307: UserWarning: You passed a `dataset_text_field` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:397: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+[codecarbon INFO @ 01:18:47] [setup] RAM Tracking...
+[codecarbon INFO @ 01:18:47] [setup] GPU Tracking...
+[codecarbon INFO @ 01:18:47] No GPU found.
+[codecarbon INFO @ 01:18:47] [setup] CPU Tracking...
+python(42892) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+python(42897) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[codecarbon WARNING @ 01:18:48] No CPU tracking mode found. Falling back on CPU constant mode.
+python(42898) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[codecarbon WARNING @ 01:18:48] We saw that you have a Apple M3 but we don't know it. Please contact us.
+[codecarbon INFO @ 01:18:48] CPU Model on constant consumption mode: Apple M3
+[codecarbon INFO @ 01:18:48] >>> Tracker's metadata:
+[codecarbon INFO @ 01:18:48]   Platform system: macOS-14.5-arm64-arm-64bit
+[codecarbon INFO @ 01:18:48]   Python version: 3.10.14
+[codecarbon INFO @ 01:18:48]   CodeCarbon version: 2.3.5
+[codecarbon INFO @ 01:18:48]   Available RAM : 16.000 GB
+[codecarbon INFO @ 01:18:48]   CPU count: 8
+[codecarbon INFO @ 01:18:48]   CPU model: Apple M3
+[codecarbon INFO @ 01:18:48]   GPU count: None
+[codecarbon INFO @ 01:18:48]   GPU model: None
+python(42908) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42931) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+                                        /Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/transformers/trainer.py:3276: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  ctx_manager = torch.cpu.amp.autocast(cache_enabled=cache_enabled, dtype=self.amp_dtype)
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:600: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+You are not running the flash-attention implementation, expect numerical differences.
+python(42934) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:18:55] Energy consumed for RAM : 0.002400 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:18:55] Energy consumed for all CPUs : 0.017004 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:18:55] 0.019404 kWh of electricity used since the beginning.
+python(42937) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42940) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42943) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:19:01] Energy consumed for RAM : 0.001125 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:19:01] Energy consumed for all CPUs : 0.007971 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:19:01] 0.009096 kWh of electricity used since the beginning.
+python(42951) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42955) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42962) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:19:07] Energy consumed for RAM : 0.000025 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:19:07] Energy consumed for all CPUs : 0.000177 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:19:07] 0.000202 kWh of electricity used since the beginning.
+python(42965) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:19:10] Energy consumed for RAM : 0.002425 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:19:10] Energy consumed for all CPUs : 0.017181 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:19:10] 0.019606 kWh of electricity used since the beginning.
+python(42968) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42971) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42974) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:19:16] Energy consumed for RAM : 0.001150 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:19:16] Energy consumed for all CPUs : 0.008148 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:19:16] 0.009298 kWh of electricity used since the beginning.
+python(42977) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42981) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42985) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:19:22] Energy consumed for RAM : 0.000050 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:19:22] Energy consumed for all CPUs : 0.000354 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:19:22] 0.000404 kWh of electricity used since the beginning.
+python(42990) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:19:25] Energy consumed for RAM : 0.002450 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:19:25] Energy consumed for all CPUs : 0.017358 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:19:25] 0.019808 kWh of electricity used since the beginning.
+python(42994) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(42997) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43000) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:19:31] Energy consumed for RAM : 0.001175 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:19:31] Energy consumed for all CPUs : 0.008325 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:19:31] 0.009500 kWh of electricity used since the beginning.
+python(43003) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43006) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:19:37] Energy consumed for RAM : 0.000075 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:19:37] Energy consumed for all CPUs : 0.000531 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:19:37] 0.000606 kWh of electricity used since the beginning.
+python(43009) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43012) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:19:40] Energy consumed for RAM : 0.002475 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:19:40] Energy consumed for all CPUs : 0.017535 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:19:40] 0.020010 kWh of electricity used since the beginning.
+python(43016) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43021) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:19:46] Energy consumed for RAM : 0.001200 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:19:46] Energy consumed for all CPUs : 0.008502 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:19:46] 0.009702 kWh of electricity used since the beginning.
+python(43024) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43028) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43037) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:19:52] Energy consumed for RAM : 0.000100 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:19:52] Energy consumed for all CPUs : 0.000708 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:19:52] 0.000808 kWh of electricity used since the beginning.
+python(43042) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43047) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:19:55] Energy consumed for RAM : 0.002500 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:19:55] Energy consumed for all CPUs : 0.017712 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:19:55] 0.020212 kWh of electricity used since the beginning.
+python(43053) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43058) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:20:01] Energy consumed for RAM : 0.001225 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:20:01] Energy consumed for all CPUs : 0.008679 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:20:01] 0.009904 kWh of electricity used since the beginning.
+python(43062) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43065) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43068) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:20:07] Energy consumed for RAM : 0.000125 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:20:07] Energy consumed for all CPUs : 0.000886 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:20:07] 0.001011 kWh of electricity used since the beginning.
+python(43071) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43075) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:20:10] Energy consumed for RAM : 0.002525 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:20:10] Energy consumed for all CPUs : 0.017889 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:20:10] 0.020414 kWh of electricity used since the beginning.
+python(43080) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43083) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:20:16] Energy consumed for RAM : 0.001250 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:20:16] Energy consumed for all CPUs : 0.008856 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:20:16] 0.010106 kWh of electricity used since the beginning.
+python(43092) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43095) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43098) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:20:22] Energy consumed for RAM : 0.000150 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:20:22] Energy consumed for all CPUs : 0.001063 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:20:22] 0.001213 kWh of electricity used since the beginning.
+python(43101) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43104) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:20:25] Energy consumed for RAM : 0.002550 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:20:25] Energy consumed for all CPUs : 0.018066 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:20:25] 0.020616 kWh of electricity used since the beginning.
+python(43107) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43111) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:20:31] Energy consumed for RAM : 0.001275 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:20:31] Energy consumed for all CPUs : 0.009033 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:20:31] 0.010308 kWh of electricity used since the beginning.
+python(43115) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43118) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43132) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:20:37] Energy consumed for RAM : 0.000175 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:20:37] Energy consumed for all CPUs : 0.001240 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:20:37] 0.001415 kWh of electricity used since the beginning.
+python(43137) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43143) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:20:40] Energy consumed for RAM : 0.002575 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:20:40] Energy consumed for all CPUs : 0.018243 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:20:40] 0.020818 kWh of electricity used since the beginning.
+python(43147) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43152) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:20:46] Energy consumed for RAM : 0.001300 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:20:46] Energy consumed for all CPUs : 0.009210 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:20:46] 0.010510 kWh of electricity used since the beginning.
+python(43160) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43164) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43170) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:20:52] Energy consumed for RAM : 0.000200 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:20:52] Energy consumed for all CPUs : 0.001417 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:20:52] 0.001617 kWh of electricity used since the beginning.
+python(43173) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43178) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:20:55] Energy consumed for RAM : 0.002600 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:20:55] Energy consumed for all CPUs : 0.018420 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:20:55] 0.021021 kWh of electricity used since the beginning.
+python(43186) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43196) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:21:01] Energy consumed for RAM : 0.001325 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:21:01] Energy consumed for all CPUs : 0.009388 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:21:01] 0.010713 kWh of electricity used since the beginning.
+python(43200) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43204) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43207) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:21:07] Energy consumed for RAM : 0.000225 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:21:07] Energy consumed for all CPUs : 0.001594 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:21:07] 0.001819 kWh of electricity used since the beginning.
+python(43211) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:21:10] Energy consumed for RAM : 0.002625 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:21:10] Energy consumed for all CPUs : 0.018598 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:21:10] 0.021223 kWh of electricity used since the beginning.
+python(43215) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43220) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43238) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:21:16] Energy consumed for RAM : 0.001350 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:21:16] Energy consumed for all CPUs : 0.009565 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:21:16] 0.010915 kWh of electricity used since the beginning.
+python(43242) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43250) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43254) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:21:22] Energy consumed for RAM : 0.000250 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:21:22] Energy consumed for all CPUs : 0.001771 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:21:22] 0.002021 kWh of electricity used since the beginning.
+python(43257) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:21:25] Energy consumed for RAM : 0.002650 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:21:25] Energy consumed for all CPUs : 0.018775 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:21:25] 0.021425 kWh of electricity used since the beginning.
+python(43260) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43263) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43266) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:21:31] Energy consumed for RAM : 0.001375 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:21:31] Energy consumed for all CPUs : 0.009742 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:21:31] 0.011117 kWh of electricity used since the beginning.
+python(43272) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43287) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/torch/utils/checkpoint.py:288: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+python(43296) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:21:37] Energy consumed for RAM : 0.000275 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:21:37] Energy consumed for all CPUs : 0.001948 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:21:37] 0.002223 kWh of electricity used since the beginning.
+python(43301) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:21:40] Energy consumed for RAM : 0.002675 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:21:40] Energy consumed for all CPUs : 0.018952 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:21:40] 0.021627 kWh of electricity used since the beginning.
+python(43305) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43309) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43312) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:21:46] Energy consumed for RAM : 0.001400 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:21:46] Energy consumed for all CPUs : 0.009919 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:21:46] 0.011319 kWh of electricity used since the beginning.
+python(43315) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43319) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43322) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:21:52] Energy consumed for RAM : 0.000300 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:21:52] Energy consumed for all CPUs : 0.002125 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:21:52] 0.002425 kWh of electricity used since the beginning.
+python(43325) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:21:55] Energy consumed for RAM : 0.002700 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:21:55] Energy consumed for all CPUs : 0.019129 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:21:55] 0.021829 kWh of electricity used since the beginning.
+python(43328) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43331) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43334) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:22:01] Energy consumed for RAM : 0.001425 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:22:01] Energy consumed for all CPUs : 0.010096 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:22:01] 0.011521 kWh of electricity used since the beginning.
+python(43337) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43340) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43343) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:22:07] Energy consumed for RAM : 0.000325 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:22:07] Energy consumed for all CPUs : 0.002303 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:22:07] 0.002628 kWh of electricity used since the beginning.
+python(43346) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:22:10] Energy consumed for RAM : 0.002725 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:22:10] Energy consumed for all CPUs : 0.019306 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:22:10] 0.022031 kWh of electricity used since the beginning.
+python(43349) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43352) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43355) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:22:16] Energy consumed for RAM : 0.001450 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:22:16] Energy consumed for all CPUs : 0.010273 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:22:16] 0.011723 kWh of electricity used since the beginning.
+python(43358) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43361) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43364) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:22:22] Energy consumed for RAM : 0.000350 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:22:22] Energy consumed for all CPUs : 0.002480 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:22:22] 0.002830 kWh of electricity used since the beginning.
+python(43367) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:22:25] Energy consumed for RAM : 0.002750 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:22:25] Energy consumed for all CPUs : 0.019483 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:22:25] 0.022233 kWh of electricity used since the beginning.
+python(43370) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43373) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43376) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:22:31] Energy consumed for RAM : 0.001475 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:22:31] Energy consumed for all CPUs : 0.010450 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:22:31] 0.011925 kWh of electricity used since the beginning.
+python(43380) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43383) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43386) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:22:37] Energy consumed for RAM : 0.000375 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:22:37] Energy consumed for all CPUs : 0.002657 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:22:37] 0.003032 kWh of electricity used since the beginning.
+python(43389) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:22:40] Energy consumed for RAM : 0.002775 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:22:40] Energy consumed for all CPUs : 0.019660 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:22:40] 0.022436 kWh of electricity used since the beginning.
+python(43392) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43395) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43398) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:22:46] Energy consumed for RAM : 0.001500 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:22:46] Energy consumed for all CPUs : 0.010627 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:22:46] 0.012128 kWh of electricity used since the beginning.
+python(43401) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43404) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43407) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:22:52] Energy consumed for RAM : 0.000400 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:22:52] Energy consumed for all CPUs : 0.002834 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:22:52] 0.003234 kWh of electricity used since the beginning.
+python(43410) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:22:55] Energy consumed for RAM : 0.002800 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:22:55] Energy consumed for all CPUs : 0.019837 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:22:55] 0.022638 kWh of electricity used since the beginning.
+python(43413) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43416) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43419) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:23:01] Energy consumed for RAM : 0.001525 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:23:01] Energy consumed for all CPUs : 0.010805 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:23:01] 0.012330 kWh of electricity used since the beginning.
+python(43422) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43425) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43428) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:23:07] Energy consumed for RAM : 0.000425 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:23:07] Energy consumed for all CPUs : 0.003011 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:23:07] 0.003436 kWh of electricity used since the beginning.
+python(43431) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:23:10] Energy consumed for RAM : 0.002825 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:23:10] Energy consumed for all CPUs : 0.020015 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:23:10] 0.022840 kWh of electricity used since the beginning.
+python(43434) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43437) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43440) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:23:16] Energy consumed for RAM : 0.001550 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:23:16] Energy consumed for all CPUs : 0.010982 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:23:16] 0.012532 kWh of electricity used since the beginning.
+python(43443) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43446) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43449) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:23:22] Energy consumed for RAM : 0.000450 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:23:22] Energy consumed for all CPUs : 0.003188 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:23:22] 0.003638 kWh of electricity used since the beginning.
+python(43452) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:23:25] Energy consumed for RAM : 0.002850 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:23:25] Energy consumed for all CPUs : 0.020192 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:23:25] 0.023042 kWh of electricity used since the beginning.
+python(43455) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43458) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43461) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:23:31] Energy consumed for RAM : 0.001575 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:23:31] Energy consumed for all CPUs : 0.011159 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:23:31] 0.012734 kWh of electricity used since the beginning.
+python(43464) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43467) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43470) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:23:37] Energy consumed for RAM : 0.000475 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:23:37] Energy consumed for all CPUs : 0.003366 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:23:37] 0.003841 kWh of electricity used since the beginning.
+python(43473) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:23:40] Energy consumed for RAM : 0.002875 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:23:40] Energy consumed for all CPUs : 0.020369 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:23:40] 0.023244 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:23:46] Energy consumed for RAM : 0.001600 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:23:46] Energy consumed for all CPUs : 0.011336 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:23:46] 0.012936 kWh of electricity used since the beginning.
+python(43477) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43480) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:23:52] Energy consumed for RAM : 0.000500 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:23:52] Energy consumed for all CPUs : 0.003542 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:23:52] 0.004042 kWh of electricity used since the beginning.
+python(43483) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:23:55] Energy consumed for RAM : 0.002900 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:23:55] Energy consumed for all CPUs : 0.020546 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:23:55] 0.023446 kWh of electricity used since the beginning.
+python(43486) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43489) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43492) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:24:01] Energy consumed for RAM : 0.001625 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:24:01] Energy consumed for all CPUs : 0.011513 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:24:01] 0.013138 kWh of electricity used since the beginning.
+python(43495) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43498) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:24:07] Energy consumed for RAM : 0.000525 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:24:07] Energy consumed for all CPUs : 0.003720 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:24:07] 0.004245 kWh of electricity used since the beginning.
+user
+ I'm really nervous about this upcoming presentation at work. Public speaking just isn't my thing, and I'm worried I'll mess it up. How can I calm my nerves and do well?
+assistant
+ First of all, it's totally normal to feel nervous about public speaking. Even the most seasoned speakers get butterflies sometimes. The key is to channel that nervous energy into excitement and preparation.
+user
+ That's a good point. I have been preparing a lot, practicing my slides and my talking points. But in the moment, I'm afraid my mind will just go blank.
+assistant
+ I totally get that fear. One thing that can help is to focus on your breathing. Take slow, deep breaths before you start and during your presentation if you need to center yourself. It's also helpful to remember that your audience is rooting for you. They want to see you succeed!
+user
+ You're right, they're not out to get me. I think I also put a lot of pressure on myself to be perfect. But realistically, a minor slip-up isn't the end of the world, right?
+assistant
+ Exactly! Perfection is overrated. If you stumble over a word or lose your place for a moment, just take a breath and keep going. Your passion for your topic will shine through. And remember, you know your stuff! You've got the knowledge and preparation to crush this presentation. I believe in you, and I know you're going to do amazing. You've so got this, girl! 🙌
+32000
+3187
+[codecarbon INFO @ 01:24:10] Energy consumed for RAM : 0.002925 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:24:10] Energy consumed for all CPUs : 0.020723 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:24:10] 0.023648 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:24:16] Energy consumed for RAM : 0.001650 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:24:16] Energy consumed for all CPUs : 0.011690 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:24:16] 0.013340 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:24:22] Energy consumed for RAM : 0.000550 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:24:22] Energy consumed for all CPUs : 0.003897 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:24:22] 0.004447 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:24:25] Energy consumed for RAM : 0.002950 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:24:25] Energy consumed for all CPUs : 0.020900 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:24:25] 0.023850 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:24:31] Energy consumed for RAM : 0.001675 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:24:31] Energy consumed for all CPUs : 0.011867 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:24:31] 0.013542 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:24:37] Energy consumed for RAM : 0.000575 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:24:37] Energy consumed for all CPUs : 0.004074 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:24:37] 0.004649 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:24:40] Energy consumed for RAM : 0.002975 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:24:40] Energy consumed for all CPUs : 0.021077 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:24:40] 0.024053 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:24:46] Energy consumed for RAM : 0.001700 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:24:46] Energy consumed for all CPUs : 0.012044 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:24:46] 0.013745 kWh of electricity used since the beginning.
+python(43501) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43504) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:24:52] Energy consumed for RAM : 0.000600 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:24:52] Energy consumed for all CPUs : 0.004251 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:24:52] 0.004851 kWh of electricity used since the beginning.
+python(43507) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:24:55] Energy consumed for RAM : 0.003000 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:24:55] Energy consumed for all CPUs : 0.021255 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:24:55] 0.024255 kWh of electricity used since the beginning.
+Map:   0%|          | 0/3187 [00:00<?, ? examples/s]
+python(43513) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:25:01] Energy consumed for RAM : 0.001725 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:25:01] Energy consumed for all CPUs : 0.012222 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:25:01] 0.013947 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:25:07] Energy consumed for RAM : 0.000625 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:25:07] Energy consumed for all CPUs : 0.004428 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:25:07] 0.005053 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:25:10] Energy consumed for RAM : 0.003025 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:25:10] Energy consumed for all CPUs : 0.021432 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:25:10] 0.024457 kWh of electricity used since the beginning.
+python(43516) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43519) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+[codecarbon INFO @ 01:25:16] Energy consumed for RAM : 0.001750 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:25:16] Energy consumed for all CPUs : 0.012399 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:25:16] 0.014149 kWh of electricity used since the beginning.
+python(43522) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+Map:   0%|          | 0/3187 [00:00<?, ? examples/s]
+[codecarbon INFO @ 01:25:22] Energy consumed for all CPUs : 0.004605 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:25:22] 0.005255 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:25:25] Energy consumed for RAM : 0.003050 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:25:25] Energy consumed for all CPUs : 0.021609 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:25:25] 0.024659 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:25:31] Energy consumed for RAM : 0.001775 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:25:31] Energy consumed for all CPUs : 0.012576 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:25:31] 0.014351 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:25:37] Energy consumed for RAM : 0.000675 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:25:37] Energy consumed for all CPUs : 0.004782 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:25:37] 0.005457 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:25:40] Energy consumed for RAM : 0.003075 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:25:40] Energy consumed for all CPUs : 0.021786 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:25:40] 0.024861 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:25:46] Energy consumed for RAM : 0.001800 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:25:46] Energy consumed for all CPUs : 0.012753 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:25:46] 0.014553 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:25:52] Energy consumed for RAM : 0.000700 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:25:52] Energy consumed for all CPUs : 0.004959 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:25:52] 0.005659 kWh of electricity used since the beginning.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': dataset_text_field, max_seq_length. Will not be supported from version '1.0.0'.
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/transformers/training_args.py:1509: FutureWarning: using `no_cuda` is deprecated and will be removed in version 5.0 of 🤗 Transformers. Use `use_cpu` instead
+  warnings.warn(
+python(43526) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/transformers/training_args.py:1961: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:269: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:307: UserWarning: You passed a `dataset_text_field` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+Map:   0%|          | 0/3187 [00:00<?, ? examples/s]
+[codecarbon INFO @ 01:25:55] Energy consumed for RAM : 0.003100 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:25:55] Energy consumed for all CPUs : 0.021963 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:25:55] 0.025063 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:26:01] Energy consumed for RAM : 0.001825 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:26:01] Energy consumed for all CPUs : 0.012930 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:26:01] 0.014755 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:26:07] Energy consumed for RAM : 0.000725 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:26:07] Energy consumed for all CPUs : 0.005137 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:26:07] 0.005862 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:26:10] Energy consumed for RAM : 0.003125 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:26:10] Energy consumed for all CPUs : 0.022140 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:26:10] 0.025265 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:26:16] Energy consumed for RAM : 0.001850 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:26:16] Energy consumed for all CPUs : 0.013107 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:26:16] 0.014957 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:26:22] Energy consumed for RAM : 0.000750 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:26:22] Energy consumed for all CPUs : 0.005314 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:26:22] 0.006064 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:26:25] Energy consumed for RAM : 0.003150 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:26:25] Energy consumed for all CPUs : 0.022317 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:26:25] 0.025467 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:26:31] Energy consumed for RAM : 0.001875 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:26:31] Energy consumed for all CPUs : 0.013284 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:26:31] 0.015159 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:26:37] Energy consumed for RAM : 0.000775 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:26:37] Energy consumed for all CPUs : 0.005491 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:26:37] 0.006266 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:26:40] Energy consumed for RAM : 0.003175 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:26:40] Energy consumed for all CPUs : 0.022494 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:26:40] 0.025669 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:26:46] Energy consumed for RAM : 0.001900 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:26:46] Energy consumed for all CPUs : 0.013461 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:26:46] 0.015362 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:26:52] Energy consumed for RAM : 0.000800 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:26:52] Energy consumed for all CPUs : 0.005668 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:26:52] 0.006468 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:26:55] Energy consumed for RAM : 0.003200 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:26:55] Energy consumed for all CPUs : 0.022671 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:26:55] 0.025871 kWh of electricity used since the beginning.
+python(43556) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(43559) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+                                                    python(43564) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+Map:   0%|          | 0/3187 [00:00<?, ? examples/s]
+[codecarbon INFO @ 01:27:01] Energy consumed for RAM : 0.001925 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:27:01] Energy consumed for all CPUs : 0.013638 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:27:01] 0.015564 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:27:07] Energy consumed for RAM : 0.000825 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:27:07] Energy consumed for all CPUs : 0.005845 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:27:07] 0.006670 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:27:10] Energy consumed for RAM : 0.003225 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:27:10] Energy consumed for all CPUs : 0.022848 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:27:10] 0.026074 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:27:16] Energy consumed for RAM : 0.001950 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:27:16] Energy consumed for all CPUs : 0.013816 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:27:16] 0.015766 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:27:22] Energy consumed for RAM : 0.000850 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:27:22] Energy consumed for all CPUs : 0.006022 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:27:22] 0.006872 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:27:25] Energy consumed for RAM : 0.003250 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:27:25] Energy consumed for all CPUs : 0.023026 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:27:25] 0.026276 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:27:31] Energy consumed for RAM : 0.001975 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:27:31] Energy consumed for all CPUs : 0.013993 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:27:31] 0.015968 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:27:37] Energy consumed for RAM : 0.000875 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:27:37] Energy consumed for all CPUs : 0.006199 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 01:27:37] 0.007074 kWh of electricity used since the beginning.
+[codecarbon INFO @ 01:27:40] Energy consumed for RAM : 0.003275 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 01:27:40] Energy consumed for all CPUs : 0.023203 kWh. Total CPU Power : 42.5 W

@@ -1,0 +1,137 @@
+python(44589) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+  0%|          | 0/159 [00:00<?, ?it/s]/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/transformers/trainer.py:3276: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  ctx_manager = torch.cpu.amp.autocast(cache_enabled=cache_enabled, dtype=self.amp_dtype)
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+[codecarbon INFO @ 10:42:18] Energy consumed for RAM : 0.000025 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:42:18] Energy consumed for all CPUs : 0.000177 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:42:18] 0.000202 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:42:33] Energy consumed for RAM : 0.000050 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:42:33] Energy consumed for all CPUs : 0.000354 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:42:33] 0.000404 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:42:48] Energy consumed for RAM : 0.000075 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:42:48] Energy consumed for all CPUs : 0.000531 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:42:48] 0.000606 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:43:03] Energy consumed for RAM : 0.000100 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:43:03] Energy consumed for all CPUs : 0.000709 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:43:03] 0.000809 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:43:18] Energy consumed for RAM : 0.000125 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:43:18] Energy consumed for all CPUs : 0.000886 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:43:18] 0.001011 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:43:33] Energy consumed for RAM : 0.000150 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:43:33] Energy consumed for all CPUs : 0.001063 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:43:33] 0.001213 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:43:48] Energy consumed for RAM : 0.000175 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:43:48] Energy consumed for all CPUs : 0.001240 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:43:48] 0.001415 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:44:03] Energy consumed for RAM : 0.000200 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:44:03] Energy consumed for all CPUs : 0.001417 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:44:03] 0.001617 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:44:18] Energy consumed for RAM : 0.000225 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:44:18] Energy consumed for all CPUs : 0.001594 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:44:18] 0.001819 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:44:33] Energy consumed for RAM : 0.000250 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:44:33] Energy consumed for all CPUs : 0.001771 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:44:33] 0.002021 kWh of electricity used since the beginning.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/transformers/training_args.py:1509: FutureWarning: using `no_cuda` is deprecated and will be removed in version 5.0 of 🤗 Transformers. Use `use_cpu` instead
+  warnings.warn(
+[codecarbon INFO @ 10:44:48] Energy consumed for RAM : 0.000275 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:44:48] Energy consumed for all CPUs : 0.001948 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:44:48] 0.002223 kWh of electricity used since the beginning.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': dataset_text_field, max_seq_length. Will not be supported from version '1.0.0'.
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/transformers/training_args.py:1961: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:269: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:307: UserWarning: You passed a `dataset_text_field` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/Users/deepakmishra/.pyenv/versions/3.10.14/envs/denv/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:397: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+[codecarbon INFO @ 10:45:03] Energy consumed for RAM : 0.000300 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:45:03] Energy consumed for all CPUs : 0.002125 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:45:03] 0.002425 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:45:18] Energy consumed for RAM : 0.000325 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:45:18] Energy consumed for all CPUs : 0.002303 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:45:18] 0.002628 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:45:33] Energy consumed for RAM : 0.000350 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:45:33] Energy consumed for all CPUs : 0.002480 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:45:33] 0.002830 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:45:48] Energy consumed for RAM : 0.000375 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:45:48] Energy consumed for all CPUs : 0.002657 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:45:48] 0.003032 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:45:59] [setup] RAM Tracking...
+[codecarbon INFO @ 10:45:59] [setup] GPU Tracking...
+[codecarbon INFO @ 10:45:59] No GPU found.
+[codecarbon INFO @ 10:45:59] [setup] CPU Tracking...
+python(44748) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+python(44754) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[codecarbon WARNING @ 10:46:00] No CPU tracking mode found. Falling back on CPU constant mode.
+python(44757) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[codecarbon WARNING @ 10:46:00] We saw that you have a Apple M3 but we don't know it. Please contact us.
+[codecarbon INFO @ 10:46:00] CPU Model on constant consumption mode: Apple M3
+[codecarbon INFO @ 10:46:00] >>> Tracker's metadata:
+[codecarbon INFO @ 10:46:00]   Platform system: macOS-14.5-arm64-arm-64bit
+[codecarbon INFO @ 10:46:00]   Python version: 3.10.14
+[codecarbon INFO @ 10:46:00]   CodeCarbon version: 2.3.5
+[codecarbon INFO @ 10:46:00]   Available RAM : 16.000 GB
+[codecarbon INFO @ 10:46:00]   CPU count: 8
+[codecarbon INFO @ 10:46:00]   CPU model: Apple M3
+[codecarbon INFO @ 10:46:00]   GPU count: None
+[codecarbon INFO @ 10:46:00]   GPU model: None
+[codecarbon INFO @ 10:46:03] Energy consumed for RAM : 0.000400 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:46:03] Energy consumed for all CPUs : 0.002834 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:46:03] 0.003234 kWh of electricity used since the beginning.
+TRAINER LOADED
+[codecarbon INFO @ 10:46:18] Energy consumed for RAM : 0.000425 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:46:18] Energy consumed for all CPUs : 0.003011 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:46:18] 0.003436 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:46:33] Energy consumed for RAM : 0.000450 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:46:33] Energy consumed for all CPUs : 0.003188 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:46:33] 0.003638 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:46:48] Energy consumed for RAM : 0.000475 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:46:48] Energy consumed for all CPUs : 0.003365 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:46:48] 0.003840 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:47:03] Energy consumed for RAM : 0.000500 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:47:03] Energy consumed for all CPUs : 0.003542 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:47:03] 0.004042 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:47:18] Energy consumed for RAM : 0.000525 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:47:18] Energy consumed for all CPUs : 0.003719 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:47:18] 0.004244 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:47:33] Energy consumed for RAM : 0.000550 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:47:33] Energy consumed for all CPUs : 0.003896 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:47:33] 0.004446 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:47:48] Energy consumed for RAM : 0.000575 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:47:48] Energy consumed for all CPUs : 0.004073 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:47:48] 0.004648 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:48:03] Energy consumed for RAM : 0.000600 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:48:03] Energy consumed for all CPUs : 0.004250 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:48:03] 0.004850 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:48:18] Energy consumed for RAM : 0.000625 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:48:18] Energy consumed for all CPUs : 0.004428 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:48:18] 0.005052 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:48:33] Energy consumed for RAM : 0.000650 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:48:33] Energy consumed for all CPUs : 0.004605 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:48:33] 0.005254 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:48:48] Energy consumed for RAM : 0.000675 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:48:48] Energy consumed for all CPUs : 0.004782 kWh. Total CPU Power : 42.5 W
+[codecarbon INFO @ 10:48:48] 0.005457 kWh of electricity used since the beginning.
+[codecarbon INFO @ 10:49:03] Energy consumed for RAM : 0.000700 kWh. RAM Power : 6.0 W
+[codecarbon INFO @ 10:49:03] Energy consumed for all CPUs : 0.004959 kWh. Total CPU Power : 42.5 W
